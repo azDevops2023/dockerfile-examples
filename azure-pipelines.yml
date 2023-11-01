@@ -12,21 +12,21 @@ variables:
   tag: '$(Build.BuildId)'
 
 stages:
-- stage: Build
-  displayName: Build image
-  jobs:
-  - job: Build
-    displayName: Build
-    pool:
-      vmImage: ubuntu-latest
-    steps:
-    # - task: Docker@2
-    #   displayName: Build an image
-    #   inputs:
-    #     command: build
-    #     dockerfile: '$(Build.SourcesDirectory)/apache-php/Dockerfile'
-    #     tags: |
-    #       $(tag)
+# - stage: Build
+#   displayName: Build image
+#   jobs:
+#   - job: Build
+#     displayName: Build
+#     pool:
+#       vmImage: ubuntu-latest
+#     steps:
+#     - task: Docker@2
+#       displayName: Build an image
+#       inputs:
+#         command: build
+#         dockerfile: '$(Build.SourcesDirectory)/apache-php/Dockerfile'
+#         tags: |
+#           $(tag)
 - task: CmdLine@2
   inputs:
     script: |
