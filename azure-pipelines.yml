@@ -2,7 +2,8 @@
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 pool:
-  name: 'Azure Pipelines'
+  # name: 'Azure Pipelines'
+  name: 'Default'
 
 trigger:
 - master
