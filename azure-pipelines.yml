@@ -3,7 +3,8 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 pool:
   # name: 'Azure Pipelines'
-  name: 'Default'
+  # name: 'Default'
+  name: 'agentPoolScaleSet1'
 
 trigger:
 - master
