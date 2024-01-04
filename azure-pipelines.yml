@@ -4,7 +4,7 @@
 pool:
   # name: 'Azure Pipelines'
   # name: 'Default'
-  name: 'agentPoolScaleSet1'
+  name: 'agentPoolScaleSet2'
 
 trigger:
 - master
